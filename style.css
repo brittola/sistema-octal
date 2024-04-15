@@ -1,0 +1,535 @@
+/* formatações gerais */
+:root {
+	--color-orange: #f78e27;
+	--color-black: #000;
+	--color-white: #fff;
+	--color-gray: #f5f5f5;
+}
+
+body,
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Quicksand", sans-serif;
+}
+
+main {
+	padding: 60px 0px;
+}
+
+.container {
+	max-width: 1200px;
+	width: 95%;
+	margin: auto;
+}
+
+/* scroll personalizado */
+*::-webkit-scrollbar {
+	height: 10px;
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	border-radius: 0px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-track:hover {
+	background-color: #F0F0F0;
+}
+
+*::-webkit-scrollbar-track:active {
+	background-color: #EEEEEE;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 6px;
+	background-color: #FFA43B;
+	border: 1px solid #000000;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #FFB129;
+}
+
+*::-webkit-scrollbar-thumb:active {
+	background-color: #FF9F22;
+}
+
+/* seção "relação com a computação" */
+section.octal-relacao-computacao {
+	padding-top: 100px;
+}
+
+section.octal-relacao-computacao #titulo {
+	color: #F78E27;
+	font-size: 42px;
+	text-align: left;
+	text-shadow: 1px 1px 2px #ff6f009e;
+	margin-bottom: 50px;
+}
+
+section.octal-relacao-computacao .img-titulo {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+section.octal-relacao-computacao .seta {
+	width: 50px;
+}
+
+section.octal-relacao-computacao h1 {
+	color: #F78E27;
+	font-size: 25px;
+	text-align: justify;
+}
+
+section.octal-relacao-computacao p {
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+section.octal-relacao-computacao #cards-vantanges-desvantagens {
+	display: flex;
+	gap: 200px;
+}
+
+section.octal-relacao-computacao .cards {
+	display: flex;
+	background-color: #F5F5F5;
+	width: 420px;
+	margin-left: 50px;
+	border-radius: 20px;
+	align-items: start;
+	justify-content: center;
+	box-shadow: 3px 3px rgba(255, 132, 0, 0.688);
+	transition: 0.3s;
+}
+
+section.octal-relacao-computacao .cards:hover {
+	transform: scale(105%);
+}
+
+section.octal-relacao-computacao .cards-items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 16px;
+	gap: 18px;
+	width: 100%;
+}
+
+section.octal-relacao-computacao .cards-items hr {
+	width: 100%;
+	color: #F78E27;
+}
+
+section.octal-relacao-computacao .cards-items ul {
+	align-self: flex-start;
+	margin-left: 25px;
+}
+
+section.octal-relacao-computacao .cards-items ul li {
+	font-family: "Quicksand", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+section.octal-relacao-computacao .cards p {
+	margin: 0;
+	color: #F78E27;
+}
+
+/* seção "como converter" */
+section.comoconverter {
+	padding-top: 100px;
+}
+
+section.comoconverter h1 {
+	margin-bottom: 50px;
+	text-align: left;
+	font-size: 42px;
+	color: var(--color-orange);
+	text-shadow: 1px 1px 2px #ff6f009e;
+}
+
+section.comoconverter #cards {
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+}
+
+section.comoconverter .card {
+	background-color: var(--color-gray);
+	width: 420px;
+	border-radius: 20px;
+	box-shadow: 3px 3px rgba(255, 132, 0, 0.688);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	transition: 0.3s;
+}
+
+section.comoconverter .card:hover {
+	transform: scale(110%);
+}
+
+section.comoconverter .card p {
+	display: flex;
+	justify-content: center;
+	font-size: 18px;
+	flex-wrap: wrap;
+	margin: 30px;
+	color: var(--color-orange);
+	font-weight: 700;
+}
+
+section.comoconverter #seta {
+	margin-top: 40px;
+	width: 50px;
+}
+
+section.comoconverter .h2introducao {
+	display: flex;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+section.comoconverter h2 {
+	margin-top: 50px;
+	font-size: 25px;
+	color: var(--color-orange);
+}
+
+section.comoconverter p {
+	color: rgba(0, 0, 0, 0.829);
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	text-align: justify;
+}
+
+section.comoconverter ul {
+	margin: 20px 30px;
+	color: rgba(0, 0, 0, 0.829);
+	font-weight: 700;
+}
+
+section.comoconverter h2 {
+	margin-bottom: 20px;
+}
+
+section.comoconverter h3 {
+	color: var(--color-orange);
+}
+
+section.comoconverter #joaokleber {
+	background-color: var(--color-gray);
+	border-radius: 20px;
+	box-shadow: 3px 3px rgba(255, 132, 0, 0.688);
+	display: flex;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	transition: 0.3s;
+	justify-content: space-between;
+	padding-right: 32px;
+}
+
+section.comoconverter #joaokleber:hover {
+	transform: scale(105%);
+}
+
+section.comoconverter #joaokleber img {
+	width: 200px;
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+section.comoconverter #calma {
+	margin-top: -30px;
+	margin-left: 30px;
+}
+
+section.comoconverter table,
+th,
+td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+section.comoconverter td,
+th {
+	padding: 20px;
+}
+
+section.comoconverter td {
+	font-weight: 700;
+}
+
+section.comoconverter #decimal {
+	display: flex;
+	gap: 100px;
+}
+
+section.comoconverter #decimal img {
+	width: 400px;
+}
+
+section.comoconverter table {
+	margin-bottom: 10px;
+}
+
+section.comoconverter #card-video iframe {
+	aspect-ratio: 16 / 9;
+	width: 100%;
+	border-radius: 10px;
+}
+
+section.comoconverter #card-video {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-gray);
+	border-radius: 20px;
+	box-shadow: 3px 3px rgba(255, 132, 0, 0.688);
+	width: 100%;
+	/* height: 300px; */
+	margin-bottom: 50px;
+	padding: 30px;
+	margin-top: 60px;
+	text-align: center;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	transition: 0.3s;
+}
+
+section.comoconverter #card-video p {
+	text-align: center;
+}
+
+section.comoconverter #card-video:hover {
+	transform: scale(105%);
+}
+
+section.comoconverter #aula {
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* seção sobre/como surgiu o sistema octal */
+section.sistemaoctal #seta {
+	width: 40px;
+	margin-top: 25px;
+}
+
+section.sistemaoctal #Lactea {
+
+	width: 250px;
+	margin-top: 25px;
+
+
+}
+
+section.sistemaoctal .texto1 {
+	display: flex;
+	align-items: center;
+}
+
+section.sistemaoctal .seta {
+	width: 40px;
+}
+
+section.sistemaoctal .titulo {
+	font-size: 42px;
+	color: var(--color-orange);
+	text-shadow: 1px 1px 2px #ff6f009e;
+	margin-bottom: 24px;
+
+}
+
+section.sistemaoctal .texto4 {
+	font-size: 24px;
+	color: var(--color-orange);
+	text-shadow: 1px 1px 2px #ff6f009e;
+}
+
+section.sistemaoctal .texto5 {
+	font-size: 24px;
+	color: var(--color-orange);
+	text-shadow: 1px 1px 2px #ff6f009e;
+
+
+}
+
+section.sistemaoctal .negrito {
+	color: rgba(0, 0, 0, 0.829);
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	text-align: justify;
+
+}
+
+section.sistemaoctal #paragrafo {
+
+	color: rgba(0, 0, 0, 0.829);
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+
+}
+
+section.sistemaoctal #card-video {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-gray);
+	border-radius: 20px;
+	box-shadow: 3px 3px rgba(255, 132, 0, 0.688);
+	width: 100%;
+	margin-bottom: 50px;
+	margin-top: 60px;
+	text-align: center;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	transition: 0.3s;
+	overflow: hidden;
+	/* Adiciona overflow oculto para evitar que o vídeo ultrapasse os limites do card */
+	height: 700px;
+	/* Altura fixa para o card */
+}
+
+section.sistemaoctal #card-video iframe {
+	width: 94%;
+	/* Define a largura do vídeo igual à largura do card */
+	height: 80%;
+	/* Define a altura do vídeo igual à altura do card */
+	border-radius: 20px;
+	/* Adiciona bordas arredondadas para combinar com o card */
+	margin: auto;
+}
+
+section.sistemaoctal #card-video:hover {
+	transform: scale(105%);
+}
+
+section.sistemaoctal #aula {
+	margin: 20px;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 16px;
+	color: var(--color-orange);
+	text-shadow: 1px 1px 2px #ff6f009e;
+
+}
+
+section.sistemaoctal #textoaula {
+	margin-bottom: 10px;
+	color: rgba(0, 0, 0, 0.829);
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+section.sistemaoctal #paragrafo {
+	margin-bottom: 80px;
+	text-align: justify;
+}
+
+section.sistemaoctal .img {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+
+
+}
+
+section.sistemaoctal .ultimo img {
+	width: 40%;
+}
+
+/* seção equipe */
+section.equipe {
+	padding-top: 100px;
+}
+
+section.equipe h1 {
+	font-size: 42px;
+	margin-bottom: 60px;
+}
+
+section.equipe .retangulo1 {
+	width: 300px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	background-position-y: 0cqmax;
+	transition: all 0.6s;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	padding: 12px;
+}
+
+section.equipe .cards-equipe {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+
+section.equipe .nome {
+	color: #F78E27;
+	text-align: center;
+}
+
+section.equipe .imagem-do-integrante {
+	transition: all 0.5s;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+section.equipe .imagem-do-integrante:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+section.equipe .excluido {
+	display: flex;
+	justify-content: center;
+}
+
+section.equipe .cards-equipe .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section.equipe .fa-brands {
+	color: #cccccc;
+	transition: 400ms;
+	font-size: 22px;
+}
+
+section.equipe .fa-brands:hover {
+	color: rgb(223, 119, 0);
+}
+
+section.equipe .links {
+	list-style: none;
+	display: flex;
+	gap: 8px;
+}

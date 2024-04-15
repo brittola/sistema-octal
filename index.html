@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sistema Numérico Octal</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./header.css">
+	<link rel="stylesheet" href="./footer.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="icon" href="./img/logo-branca.png">
+</head>
+
+<body>
+	<!-- início header -->
+	<header>
+		<div class="conteudo container">
+			<a href="/" class="logo">
+				<img src="./img/logo.png" alt="Logo do Projeto">
+			</a>
+			<!-- menu de navegação -->
+			<nav>
+				<ul>
+					<li>
+						<a href="#" class="active">início</a>
+					</li>
+					<li>
+						<a href="#">como surgiu</a>
+					</li>
+					<li>
+						<a href="#relacao">relação com a computação</a>
+					</li>
+					<li>
+						<a href="#converter">como converter</a>
+					</li>
+					<li>
+						<a href="#equipe">equipe</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- fim header -->
+	<main class="home">
+		<section id="como-surgiu" class="sistemaoctal container">
+			<h1 class="titulo">
+				Como surgiu o Sistema Octal
+			</h1>
+			<div class="texto1">
+				<img class="seta" src="./img/seta.png" alt="Seta">
+				<h1 class="texto4">
+					Introdução aos sistemas de númeração
+				</h1>
+			</div>
+			<p class="negrito">
+				Os sistemas numéricos remontam à antiguidade, com culturas antigas desenvolvendo formas de contar e
+				representar quantidades. O sistema decimal, baseado em dez símbolos, tem suas origens na antiga Índia. A
+				evolução dos sistemas numéricos levou ao desenvolvimento de sistemas posicionais, onde o valor de um
+				dígito depende de sua posição. Além do decimal, sistemas como binário (base-2), octal (base-8) e
+				hexadecimal (base-16) são usados, especialmente em computação. Esses sistemas continuam a evoluir com o
+				progresso matemático e tecnológico, mas o decimal ainda é o mais amplamente utilizado.
+			</p>
+
+			<div id="card-video">
+				<h3 id="aula">VIDEOAULA</h3>
+				<p id="textoaula">
+					Essa videoaula fala um pouco mais de como surgiram os sistemas de númeração. Confira:
+				</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/OOxWr3aNIFw?si=-6Xdueje1p9I_PxJ"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+				</iframe>
+			</div>
+
+			<div class="texto2">
+				<div class="texto1">
+					<img class="seta" src="./img/seta.png" alt="Seta">
+					<h2 class="texto5">
+						Sistema Octal
+					</h2>
+				</div>
+				<p id="paragrafo">
+					O sistema octal, também conhecido como base-8, é um sistema numérico que utiliza oito símbolos
+					diferentes para representar números. Sua história remonta aos primórdios da computação e da
+					matemática.
+
+					<br /><br /> A origem do sistema octal está ligada à necessidade de representar e manipular números
+					de forma eficiente em sistemas de computação primitivos. No início da história da computação, as
+					máquinas utilizavam sistemas de numeração binários, pois eram mais simples de implementar em
+					circuitos eletrônicos. No entanto, representar grandes números em binário pode ser complexo e ocupar
+					muito espaço em memória.
+
+					<br /><br /> Com desenvolvimento da tecnologia e a necessidade de simplificar a representação de
+					números em sistemas de computação, surgiu o sistema octal. A base 8 foi escolhida por ser uma
+					potência de 2, o que significa que pode ser facilmente convertida de e para binário. Cada dígito
+					octal representa um grupo de três dígitos binários, tornando as operações de conversão entre binário
+					e octal bastante simples.
+
+					<br /><br /> O sistema octal foi amplamente utilizado em computadores e sistemas digitais durante o
+					século XX, especialmente nas décadas de 1950, 1960 e 1970. No entanto, com o avanço da tecnologia e
+					o surgimento de sistemas de numeração mais eficientes, como o sistema hexadecimal, o uso do sistema
+					octal foi gradualmente diminuindo.
+
+					<br /><br /> Hoje em dia, o sistema octal ainda é utilizado em algumas áreas específicas, como
+					programação de baixo nível e sistemas embarcados. No entanto, em muitos casos, foi substituído por
+					sistemas de numeração mais modernos e versáteis. Mesmo assim, sua contribuição para o
+					desenvolvimento inicial da computação é inegável, e seu legado continua a influenciar a forma como
+					representamos e manipulamos números em sistemas digitais.
+				</p>
+				<div class="ultimo">
+					<img class="img" src="./img/octal.png" alt="imagem da representação do sistema octal">
+				</div>
+			</div>
+
+
+
+		</section>
+		<section id="relacao" class="octal-relacao-computacao container">
+			<div class="octal-computacao">
+				<h1 id="titulo">A relação entre o sistema octal e a computação</h1>
+				<img src="./img/Hex_1.jpg" alt="Computadores com sistemas octal" style="padding-bottom: 50px;">
+				<div class="img-titulo">
+					<img class="seta" src="./img/seta.png" alt="seta">
+					<h1> Sistema octal e a computação</h1>
+				</div>
+
+				<p>O sistema octal desempenhou um papel importante nos primeiros dias da computação,
+					especialmente em sistemas que usavam representações de números binários. Nos primórdios da
+					computação,
+					quando os computadores usavam circuitos e dispositivos eletrônicos simples para realizar cálculos.
+				</p>
+
+				<p>
+					Uma das principais razões pelas quais o sistema octal foi utilizado é devido à facilidade de
+					conversão
+					entre binário e octal. Como o octal é uma base-8,
+					cada dígito em octal é equivalente a três dígitos em binário.
+					Isso significa que grupos de três dígitos binários podem ser facilmente convertidos para um único
+					dígito octal,
+					simplificando a representação de grandes números binários.
+				</p>
+
+
+				<p>Outra razão é que os primeiros computadores frequentemente tinham tamanhos de palavra (o número de
+					bits
+					que podiam ser manipulados de uma só vez) que eram múltiplos de três,
+					o que se alinhava bem com a representação octal.
+					Por exemplo, sistemas com palavras de 12, 24 ou 36 bits eram comuns,
+					e esses tamanhos de palavra tornavam a representação octal particularmente conveniente.</p>
+			</div>
+
+			<div class="uso-octal">
+				<div class="img-titulo">
+					<img class="seta" src="./img/seta.png" alt="">
+					<h1>Uso do sistema octal atualmente</h1>
+				</div>
+				<p>Embora o sistema octal tenha sido em grande parte substituído pelo sistema hexadecimal em muitos
+					contextos,
+					ainda existem algumas aplicações práticas para ele,
+					especialmente em programação de baixo nível e em sistemas Unix/Linux.</p>
+
+				<p>Em programação de baixo nível, como a programação de sistemas e a engenharia de hardware, o sistema
+					octal é utilizado para representar valores de permissão de arquivo. Por exemplo, em sistemas
+					Unix/Linux, as permissões de arquivo são representadas por um número octal de três dígitos, onde
+					cada dígito representa as permissões para o proprietário, grupo e outros, respectivamente.</p>
+			</div>
+
+			<div class="declinio-octal">
+				<div class="img-titulo">
+
+					<img class="seta" src="./img/seta.png" alt="">
+					<h1>O declínio do uso do sistema octal</h1>
+				</div>
+				<p>Embora o sistema octal seja uma forma eficiente de representar números binários para humanos,
+					o sistema hexadecimal oferece uma compactação ainda mais eficiente.
+					Isso ocorre porque cada dígito hexadecimal representa quatro dígitos binários,
+					enquanto cada dígito octal representa apenas três.</p>
+
+				<p>Confira mais vantagens do sistema hexadecimal em comparação com o octal:</p>
+			</div>
+
+			<div id="cards-vantanges-desvantagens">
+				<div class="cards">
+					<div class="cards-items">
+						<p>Hexadecimal ✔️</p>
+						<hr>
+						<ul>
+							<li>Compactação mais eficiente</li>
+							<li>Mais facilidade na conversão</li>
+							<li>Usado como padrões industriais e convenções(RGB,indentificador de hardware e etc) </li>
+							<li>Facilidade de Leitura e Manipulação</li>
+							<li>Compatibilidade com Bytes e Palavras de Memória</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="cards">
+					<div class="cards-items">
+
+						<p>Octal❌ </p>
+						<hr>
+						<ul>
+							<li>Compactação Ineficiente</li>
+							<li>Dificuldade de Conversão</li>
+							<li>Menor Adoção em Padrões e Convenções</li>
+							<li>Dificuldade de Leitura e Manipulação</li>
+							<li>Incompatibilidade com Bytes e Palavras de Memória</li>
+						</ul>
+					</div>
+
+					<hr>
+				</div>
+
+			</div>
+		</section>
+		<section id="converter" class="comoconverter container">
+			<h1>Como converter octal?</h1>
+			<div id="cards">
+				<div class="card">
+					<p>O que o "10" representa pra você?</p>
+				</div>
+				<div class="card">
+					<p>O que o "A" representa pra você?</p>
+				</div>
+				<div class="card">
+					<p>O que o "12" representa pra você?</p>
+				</div>
+			</div>
+			<div class="h2introducao">
+				<img id="seta" src="./img/seta.png" alt="seta" />
+				<h2>Introdução</h2>
+			</div>
+			<p>
+				Como já visto no decorrer do assunto, os sistemas digitais são os sistemas de contagem usados para
+				determinada funcionalidade, mas oque tem a ver o significado de “A”, “10” e “12” ?, bem cada um deles
+				representa o mesmo número em diferentes bases, no caso o 10 é o número dez do mais utilizado sistema
+				decimal, o 12 representa o dez em octal e o A representa o dez em hexadecimal, a forma de representação
+				é calculada de diversas formas a depender do sistema que você quer fazer a conversão. Em outras
+				palavras, determinado número em um sistema representa outro em outro sistema, e para deixar tornar ele
+				como desejado, basta apenas aprender a usar a conversão do sistema. Sendo assim que tal aprender a como
+				converter em octal?
+			</p>
+			<div id="joaokleber">
+				<div id="calma">
+					<h2>
+						"Mas calma, você também quer aprender como converter?"
+					</h2>
+					<h3>
+						Para fazer a conversão, você vai precisar saber as
+						seguintes operações:
+					</h3>
+					<ul>
+						<li>Soma e subtração</li>
+						<li>Multiplicação e divisão</li>
+						<li>Exponencial</li>
+					</ul>
+				</div>
+				<div>
+					<img src="./img/joaokleber.png" alt="joaokleber" />
+				</div>
+			</div>
+			<div class="h2introducao">
+				<img id="seta" src="./img/seta.png" alt="seta" />
+				<h2>
+					Octal tem base 8, mas isso você já sabe. Vamos ver como contar em octal:
+				</h2>
+			</div>
+			<p>Vamos contar de 0 a 10 em Octal. Seguimos com o dígito único até que ele esteja representando o número
+				máximo (7). Quando isso acontecer, o próximo número será zerando esse dígito e incrementando o dígito a
+				esquerda.</p>
+			<table>
+				<tr>
+					<th>Octal</th>
+					<td>0</td>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+				</tr>
+				<tr>
+					<th>Decimal</th>
+					<td>0</td>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+				</tr>
+			</table>
+
+			<div>
+				<div class="h2introducao">
+					<img id="seta" src="./img/seta.png" alt="seta" />
+					<h2>Como converter de Decimal para Octal:</h2>
+				</div>
+				<p>
+					Para converter um número decimal em octal realiza-se a
+					divisão sucessiva por 8 (base do sistema octal) e utiliza os restos das divisões, semelhante
+					às conversões apresentadas para os sistemas binário e
+					hexadecimal.
+				</p>
+				<p>Por exemplo, vamos converter o número 246 para octal:</p>
+				<div id="decimal">
+					<table>
+						<tr>
+							<th>Dividendo</th>
+							<th>Divisor</th>
+							<th>quociente</th>
+							<th>Resto</th>
+						</tr>
+						<tr>
+							<td>246</td>
+							<td>8</td>
+							<td>30</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td>8</td>
+							<td>3</td>
+							<td>6</td>
+						</tr>
+					</table>
+					<img src="./img/decimal-octal.jpg" alt="decimal para octal" />
+				</div>
+				<p>
+					O resultado é lido da direita para a esquerda a partir do
+					último quociente. Assim, 246 é igual a 366<sub>8</sub>
+				</p>
+				<div id="octal">
+					<div class="h2introducao">
+						<img id="seta" src="./img/seta.png" alt="seta" />
+						<h2>Como converter de Octal para Decimal:</h2>
+					</div>
+					<p>
+						A conversão de octal para decimal segue o mesmo
+						princípio apresentado para o sistema hexadecimal e
+						binário. Nesse caso, multiplica-se cada dígito pela
+						potência de 8 relativa à posição e somam-se os
+						resultados:
+					</p>
+					<p>
+						Por exemplo, a conversão do número 123<sub>8</sub> para
+						decimal:
+					</p>
+					<table>
+						<tr>
+							<th>Octal</th>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<th>valor da posição</th>
+							<td>1x8<sup>2</sup></td>
+							<td>2x8<sup>1</sup></td>
+							<td>3x8<sup>0</sup></td>
+						</tr>
+						<th>multiplicação</th>
+						<td>64</td>
+						<td>16</td>
+						<td>3</td>
+						<tr>
+							<th>resultado</th>
+							<td colspan="3">64+16+3= 83 decimal</td>
+						</tr>
+					</table>
+					<p>
+						O resultado é a soma das multiplicações a base 8 =
+						83<sub>8</sub>
+					</p>
+				</div>
+			</div>
+			<div id="card-video">
+				<h1 id="aula">VIDEOAULA</h1>
+				<p>
+					Vamos entender melhor com um video.
+				</p>
+				<iframe src="https://www.youtube.com/embed/pLre_3yOrQg?si=mlZVbNsRkVS2vnpb" title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+		</section>
+		<section id="equipe" class="equipe container">
+			<h1 style="text-align: center;color: #F78E27;"><strong>Equipe</strong></h1>
+
+
+			<!-- essa vai ser a div principal, com todos os cards dentro -->
+			<div class="cards-equipe">
+				<!-- replica um card pra cada membro -->
+				<div class="card">
+					<!-- imagem da pessoa -->
+					<img src="./img/Tavares.png" alt="" class="imagem-do-integrante" style="width: 100px; height: 100px;">
+					<div class="retangulo1">
+						<h3 class="nome">Arthur Tavares Porto</h3>
+						<!-- coloca horizontal com flex -->
+						<ul class="links">
+							<li>
+								<a href="https://github.com/TavaressDev" target="_blank"><i
+										class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/arthur-tavares-a57b8528a/" target="_blank"><i
+										class="fa-brands fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card">
+					<!-- imagem da pessoa -->
+					<img src="./img/Tutubas.png" alt="" class="imagem-do-integrante" style="width: 100px; height: 100px;">
+					<div class="retangulo1">
+						<h3 class="nome">Artur Bezerra Da Silva</h3>
+						<!-- coloca horizontal com flex -->
+						<ul class="links">
+							<li>
+								<a href="https://github.com/TutubasDev" target="_blank"><i
+										class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/artur-bezerra-1945022ba/" target="_blank"><i
+										class="fa-brands fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card">
+					<!-- imagem da pessoa -->
+					<img src="./img/Furtado.png" alt="" class="imagem-do-integrante" style="width: 100px; height: 100px;">
+					<div class="retangulo1">
+						<h3 class="nome">Caio Furtado De Miranda</h3>
+						<!-- coloca horizontal com flex -->
+						<ul class="links">
+							<li>
+								<a href="https://github.com/CaioFurtadoo" target="_blank"><i
+										class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/caio-furtado-de-miranda-carvalho-b2b87a298/"
+									target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div>
+
+			</div>
+			<div class="cards-equipe">
+				<!-- replica um card pra cada membro -->
+				<div class="card">
+					<!-- imagem da pessoa -->
+					<img src="./img/vida1.png" alt="" class="imagem-do-integrante" style="width: 100px; height: 100px;">
+					<div class="retangulo1">
+						<h3 class="nome">Davi Gomes Mendes</h3>
+						<!-- coloca horizontal com flex -->
+						<ul class="links">
+							<li>
+								<a href="github"><i class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/davi-mendes-1b0763231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+									target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card">
+					<!-- imagem da pessoa -->
+					<img src="./img/Nogueira.png" alt="" class="imagem-do-integrante" style="width: 100px; height: 100px;">
+					<div class="retangulo1">
+						<h3 class="nome">Gabriel Nogueira</h3>
+						<!-- coloca horizontal com flex -->
+						<ul class="links">
+							<li>
+								<a href="https://github.com/gabrielnog13" target="_blank"><i
+										class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/gabrielnog13/" target="_blank"><i
+										class="fa-brands fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card">
+					<!-- imagem da pessoa -->
+					<img src="./img/Cafajeste.png" alt="" class="imagem-do-integrante" style="width: 100px; height: 100px;">
+					<div class="retangulo1">
+						<h3 class="nome">Gabriel Rodrigues Britto</h3>
+						<!-- coloca horizontal com flex -->
+						<ul class="links">
+							<li>
+								<a href="https://github.com/brittola" target="_blank"><i
+										class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="https://linkedin.com/in/grbritto" target="_blank"><i
+										class="fa-brands fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="cards-equipe">
+				<!-- replica um card pra cada membro -->
+				<div class="card">
+					<!-- imagem da pessoa -->
+					<img src="./img/Luccas.png" alt="" class="imagem-do-integrante" style="width: 100px; height: 100px;">
+					<div class="retangulo1">
+						<h3 class="nome">Luccas José B. Fernandes</h3>
+						<!-- coloca horizontal com flex -->
+						<ul class="links">
+							<li>
+								<a href="https://github.com/luccas-fernandes" target="_blank"><i
+										class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/luccas-fernandes-07a283239/" target="_blank"><i
+										class="fa-brands fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card">
+					<!-- imagem da pessoa -->
+					<img src="./img/Ray.png" alt="" class="imagem-do-integrante" style="width: 100px; height: 100px;">
+					<div class="retangulo1">
+						<h3 class="nome">Rayanne Falcão Rodrigues</h3>
+						<!-- coloca horizontal com flex -->
+						<ul class="links">
+							<li>
+								<a href="https://github.com/rayannefalcaoo" target="_blank"><i
+										class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/rayanne-falc%C3%A3o-1415b1270/" target="_blank"><i
+										class="fa-brands fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card">
+					<!-- imagem da pessoa -->
+					<img src="./img/Vini.png" alt="" class="imagem-do-integrante" style="width: 100px; height: 100px;">
+					<div class="retangulo1">
+						<h3 class="nome">Vinícius De Souza Macêdo</h3>
+						<!-- coloca horizontal com flex -->
+						<ul class="links">
+							<li>
+								<a href="https://github.com/viniSouza06" target="_blank"><i
+										class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/vinicius-macedo-8a5873300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+									target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- início footer -->
+	<footer>
+		<div class="conteudo container">
+			<a href="/" class="logo">
+				<img src="./img/logo-branca.png" alt="Logo do Projeto">
+			</a>
+			<form action="/" method="post">
+				<h2>
+					Deixe seu feedback!
+				</h2>
+				<p>
+					Vamos adorar saber o que achou do nosso projeto.
+				</p>
+				<input type="text" placeholder="Digite seu nome">
+				<textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
+				<button>Enviar mensagem</button>
+			</form>
+			<nav>
+				<ul>
+					<li>
+						<strong>mapa do site</strong>
+					</li>
+					<li>
+						<a href="#">início</a>
+					</li>
+					<li>
+						<a href="#">como surgiu</a>
+					</li>
+					<li>
+						<a href="#relacao">relação com a computação</a>
+					</li>
+					<li>
+						<a href="#converter">como converter</a>
+					</li>
+					<li>
+						<a href="#equipe">equipe</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="fundo">
+			<div class="conteudo container">
+				<p>
+					Grupo 5 - Análise e Desenvolvimento de Sistemas - 2024.1
+				</p>
+				<a href="https://cesar.school" target="_blank">
+					<img src="./img/cesar-branca.png" alt="Logo CESAR School">
+				</a>
+			</div>
+		</div>
+	</footer>
+	<!-- fom footer -->
+</body>
+
+</html>
